@@ -58,11 +58,11 @@ export default function Hero() {
                 />
               </svg>
            <p className="font-mono">It's me, Hi 👋🏾</p>
-
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

@@ -16,18 +16,23 @@ export default function Navbar() {
 
   return (
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+      
       <div className="flex  md:flex-row justify-between items-center">
-        <div className="flex flex-col">
-          <Link href="/">
+       <Link href="/">
+       <div className="space-x-2 flex :flex-row justify-between items-center">
+        <img className="h-10 w-10 "src="/favicon.ico"/>
+      <div className="flex flex-col">
+   
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
             </h1>
             <p className="text-base font-light text-gray-500 dark:text-gray-300">
               {userData.designation}
             </p>
-          </Link>
-        </div>
 
+        </div>
+       </div>
+                 </Link>
         <div className="space-x-8 hidden md:block">
           <Link
             href="/about"

@@ -7,8 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "next build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
-    "deploy": "gh-pages -b gh-pages -d out --dotfiles"
+"predeploy": "next build && next export && node -e \"require('fs').mkdirSync('out',{recursive:true});require('fs').writeFileSync('out/.nojekyll','')\"",
+"deploy": "gh-pages -b gh-pages -d out --dotfiles"
+
   },
   "dependencies": {
     "axios": "^0.21.1",

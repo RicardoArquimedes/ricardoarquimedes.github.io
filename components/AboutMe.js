@@ -22,7 +22,22 @@ export default function AboutMe() {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Social Buttons */}
+
+   
           <div className="inline-flex flex-col">
+              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+                Certifications
+              </h1>
+             <div className="flex flex-row flex-wrap mb-8">
+                                    <img
+                src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://images.credly.com/size/680x680/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/blob"
+                className="h-20 w-20 mx-4 my-4"
+              />
+           </div>
             <div>
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Contact
@@ -88,6 +103,7 @@ export default function AboutMe() {
             </div>
           </div>
           {/* Text area */}
+          
           <div className="col-span-1 md:col-span-2">
             {userData.about.description?.map((desc, idx) => (
               <p
@@ -97,7 +113,10 @@ export default function AboutMe() {
                 {desc}
               </p>
             ))}
+            <div className="flex flex-row flex-wrap mt-8">
+ 
 
+            </div>
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
