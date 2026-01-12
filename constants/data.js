@@ -50,11 +50,12 @@ const userData = {
     currentProjectUrl: "https://ricardoarquimedes.github.io/smart-habits-app",
   },
   experience: [
+
 {
   title: "Software Developer",
   company: "Banco de Occidente",
-  year: "2021 - 2023",
-  desc: "Contributed to the development of a core internal web platform, building reusable Angular components, implementing form-driven workflows, integrating with cloud-based microservices, and ensuring code quality through unit testing. Worked closely with backend and product teams to deliver secure and scalable features."
+  year: "2025 - Present",
+  desc: "Contributed to a cross-border transactions platform using a microfrontend architecture, building Angular remote modules and custom elements, integrating with serverless microservices, and orchestrating complex workflows through AWS Step Functions and API Gateway. Participated in infrastructure provisioning and ensured maintainability through automated testing with Jest."
 },
 {
   title: "Software Developer",
@@ -65,11 +66,9 @@ const userData = {
 {
   title: "Software Developer",
   company: "Banco de Occidente",
-  year: "2025 - Present",
-  desc: "Contributed to a cross-border transactions platform using a microfrontend architecture, building Angular remote modules and custom elements, integrating with serverless microservices, and orchestrating complex workflows through AWS Step Functions and API Gateway. Participated in infrastructure provisioning and ensured maintainability through automated testing with Jest."
-}
-
-
+  year: "2021 - 2023",
+  desc: "Contributed to the development of a core internal web platform, building reusable Angular components, implementing form-driven workflows, integrating with cloud-based microservices, and ensuring code quality through unit testing. Worked closely with backend and product teams to deliver secure and scalable features."
+},
   ],
   resumeUrl:
     "",
