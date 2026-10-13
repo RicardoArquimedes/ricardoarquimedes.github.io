@@ -42,7 +42,7 @@ export default function Hero() {
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
           <img src={userData.avatarUrl} alt="avatar" className=" shadow" />
-          <div className="flex flex-row justify-between mt-4">
+          <div className="flex flex-row justify-between items-center mt-4">
             <div className="flex flex-row space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +58,24 @@ export default function Hero() {
                 />
               </svg>
            <p className="font-mono">It's me, Hi 👋🏾</p>
+            </div>
+            <div className="flex flex-row">
+              {userData.certifications?.map((cert, idx) => (
+                <a
+                  key={idx}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={cert.title}
+                  className={`${idx === 0 ? "" : "-ml-3"} rounded-full ring-2 ring-white dark:ring-gray-800 transition-transform duration-300 hover:scale-110 hover:z-10`}
+                >
+                  <img
+                    src={cert.imgUrl}
+                    alt={cert.title}
+                    className="h-10 w-10 rounded-full bg-white object-contain"
+                  />
+                </a>
+              ))}
             </div>
           </div>
         </div>
