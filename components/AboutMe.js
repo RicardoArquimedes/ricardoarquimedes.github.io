@@ -29,14 +29,22 @@ export default function AboutMe() {
                 Certifications
               </h1>
              <div className="flex flex-row flex-wrap mb-8">
-                                    <img
-                src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://images.credly.com/size/680x680/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/blob"
-                className="h-20 w-20 mx-4 my-4"
-              />
+              {userData.certifications?.map((cert, idx) => (
+                <a
+                  key={idx}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={cert.title}
+                  className="mx-4 my-4 rounded-md transition-transform duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                >
+                  <img
+                    src={cert.imgUrl}
+                    alt={cert.title}
+                    className="h-20 w-20"
+                  />
+                </a>
+              ))}
            </div>
             <div>
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
@@ -97,6 +105,20 @@ export default function AboutMe() {
                   <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     LinkedIn
+                  </div>
+                </a>
+              </div>
+              <div className="flex flex-row justify-start items-center">
+                <a
+                  href={userData.socialLinks.credly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-4 group"
+                >
+                  <div className="my-4">&rarr;</div>
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
+                    Credly
                   </div>
                 </a>
               </div>

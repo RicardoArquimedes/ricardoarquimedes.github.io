@@ -6,7 +6,29 @@ const userData = {
   email: "richardcqt28@gmail.com",
   phone: "+57 3173392744",
   address: "Medellín, Colombia.",
+  certifications: [
+    {
+      title: "AWS Certified Developer – Associate",
+      link: "https://www.credly.com/badges/c2ae9518-a91b-4bcd-824d-f04be1329dc9",
+      imgUrl: "https://images.credly.com/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      link: "https://www.credly.com/badges/d7a054bb-e66d-430d-927f-e0504a169d85",
+      imgUrl: "https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+    },
+    {
+      title: "AWS Educate Introduction to Generative AI",
+      link: "https://www.credly.com/badges/c8267ca3-adaa-4b2c-b823-5e3930c97a06",
+      imgUrl: "https://images.credly.com/size/680x680/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/blob",
+    },
+  ],
   projects: [
+    {
+      title: "Basta Games",
+      link: "https://basta-game-beta.vercel.app/",
+      imgUrl: "/bastagame.jpeg",
+    },
     {
       title: "Smart Habits App",
       link: "https://ricardoarquimedes.github.io/smart-habits-app",
@@ -52,10 +74,31 @@ const userData = {
   experience: [
 
 {
+  title: "AWS Certified Developer – Associate",
+  company: "Amazon Web Services",
+  companyLink: "https://www.credly.com/badges/c2ae9518-a91b-4bcd-824d-f04be1329dc9",
+  year: "Mar 2026",
+  desc: "Earned the AWS Certified Developer – Associate certification, validating proficiency writing applications with AWS service APIs, AWS CLI and SDKs, using containers, and deploying through CI/CD pipelines."
+},
+{
   title: "Software Developer",
   company: "Banco de Occidente",
   year: "2025 - Present",
   desc: "Contributed to a cross-border transactions platform using a microfrontend architecture, building Angular remote modules and custom elements, integrating with serverless microservices, and orchestrating complex workflows through AWS Step Functions and API Gateway. Participated in infrastructure provisioning and ensured maintainability through automated testing with Jest."
+},
+{
+  title: "AWS Certified Cloud Practitioner",
+  company: "Amazon Web Services",
+  companyLink: "https://www.credly.com/badges/d7a054bb-e66d-430d-927f-e0504a169d85",
+  year: "Dec 2025",
+  desc: "Earned the AWS Certified Cloud Practitioner certification, demonstrating foundational knowledge of AWS Cloud services, architecture, and best practices."
+},
+{
+  title: "AWS Educate – Introduction to Generative AI",
+  company: "Amazon Web Services",
+  companyLink: "https://www.credly.com/badges/c8267ca3-adaa-4b2c-b823-5e3930c97a06",
+  year: "Mar 2025",
+  desc: "Completed AWS Educate's Introduction to Generative AI training, covering foundational generative AI concepts and responsible use."
 },
 {
   title: "Software Developer",
@@ -75,6 +118,7 @@ const userData = {
   socialLinks: {
     linkedin: "https://linkedin.com/in/RicardoArquimedes",
     github: "https://github.com/RicardoArquimedes",
+    credly: "https://www.credly.com/users/ricardoarquimedes",
 
   },
 };

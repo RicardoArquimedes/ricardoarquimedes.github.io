@@ -15,6 +15,10 @@
 # production
 /build
 
+#claude
+/.claude
+.claude
+
 # misc
 .DS_Store
 *.pem
